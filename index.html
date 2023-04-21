@@ -1,40 +1,136 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js – The HTML Presentation Framework</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<div>
+					<h1 class="r-fit-text">HTTP / HTTPS 차이</h1>
+					<h5>HTTP보다 HTTPS가 더 안전한 이유</h5>
+					<br />
+				</div>
+				<p style="text-align: right;">hh99-14th 정해진</p>
+			</section>
+
+
+			<section>
+				<h3>이런 화면을 보신적이 있나요?</h3>
+				<img src="imgs/1.png" alt="">
+			</section>
+
+
+			<section style="text-align: left;">
+				<h3>HTTP와 HTTPS ?</h3>
+				<p>웹 페이지를 요청하고 불러올때 사용하는 프로토콜</p>
+			</section>
+
+
+			<section style="text-align: left;">
+				<h3>프로토콜?</h3> <br />
+				<ul>
+					<li style="font-size: 2rem;">서로 다른 기기와 소프트웨어가 정보를 주고받을 때 오류 없이 </li> <br />
+					<li style="font-size: 2rem;">원활하게 작동하기 위해 컴퓨터나 기기들이 서로 통신할 때 사용하는 규칙</li>
+				</ul>
+
+			</section>
+
+			<section style="text-align: left;">
+				<h3>“HTTP와 HTTPS는 웹 브라우저와 <br /> 웹 서버 간 정보를 주고받는 방식”</h3>
+
+			</section>
+
+			<section style="text-align: left;">
+				<h3>무엇을 줄인 단어일까?</h3>
+				<ul>
+					<li style="font-size: 2rem;">HTTP (HyperText Transfer Protocol) </li> <br />
+					<li style="font-size: 2rem;">HTTPS (HyperText Transfer Protocol Secure)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 style="text-align: left;">보안이 가장 큰 차이점!</h3>
+				<h4 style="text-align: left;">HTTPS는 정보를 <span style="color:red">암호화</span>해서 주고받아 누군가 정보를 탈취할 수 없게 만든다.</h4>
+				<img src="imgs/2.png" width="500px" alt="">
+			</section>
+
+
+			<section>
+				<h3 style="text-align: left;">보안이 가장 큰 차이점!</h3>
+				<h4 style="text-align: left;">HTTPS는 <span style="color:red">데이터 무결성</span>을 보장한다.</h4>
+				<img src="imgs/3.png" width="500px" alt="">
+			</section>
+
+
+
+			<section>
+				<h3 style="text-align: left;">보안이 가장 큰 차이점!</h3>
+				<h5 style="text-align: left;">HTTPS는 <span style="color:red">SSL 인증서</span>를 사용한다.</h5>
+				<h5 style="text-align: left;">브라우저에서 자물쇠 모양을 눌러보신 적이 있나요?</h5>
+
+				<img src="imgs/4.png" width="500px" alt="">
+			</section>
+
+			<section style="text-align: left;">
+				<h3>SSL 인증서??</h3>
+				<p>웹 사이트와 사용자 간에 안전한 정보 교환을 보장하는<br/> 디지털 문서 => 웹사이트의 신분증</p>
+			</section>
+
+
+			<section style="text-align: left;">
+				<h3>정리</h3>
+				<p>HTTP에서 보안이 강화된 버전이 HTTPS<br/> 이유는 데이터 암호화, 데이터 무결성 보장, SSL 인증을 사용</p>
+			</section>
 		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	</div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+
+</body>
+
 </html>
